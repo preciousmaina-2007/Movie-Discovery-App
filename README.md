@@ -1,121 +1,45 @@
-# Movie-Discovery-App
-# 🎬 CineVerse
+# CineVerse
 
-CineVerse is a fully responsive movie discovery web application built using React, Vite, Firebase, and the TMDB API. Users can browse trending movies, search for movies, view detailed information, and save favorite movies to a personal watchlist.
+A responsive Netflix-style React movie discovery app built with Vite, Tailwind CSS, Firebase, React Router, Axios, and the TMDB API.
 
----
+## Features
 
-# 📸 Preview
+- Trending movies homepage
+- TMDB search
+- Movie cards with posters, ratings, and release years
+- Movie details with overview, rating, release date, runtime, backdrop, and trailer
+- Firebase email/password and Google authentication
+- Protected favorites route
+- Firestore-backed favorites stored at `favorites/{userId}` as a `movies` array
+- Loading and error states
+- Vitest and React Testing Library coverage
+- GitHub Actions CI and Vercel SPA rewrites
 
-## Home Page
-- Trending movies
-- Search functionality
-- Responsive movie grid
+## Setup
 
-## Movie Details Page
-- Movie poster
-- Overview
-- Ratings
-- Release date
-- Trailer support
-
-## Authentication
-- Email/password login
-- Google authentication
-- Protected routes
-
----
-
-# ✨ Features
-
-- 🔍 Search movies by title
-- 🎞 Browse trending movies
-- 📄 View detailed movie information
-- ❤️ Save favorite movies
-- 🔐 Firebase Authentication
-- 🛡 Protected routes
-- ☁ Cloud data persistence with Firestore
-- 📱 Fully responsive design
-- ⚡ Fast performance with Vite
-- 🎨 Modern Netflix-inspired UI
-
----
-
-# 🛠 Tech Stack
-
-## Frontend
-- React
-- Vite
-- Tailwind CSS
-- React Router DOM
-- Axios
-- Framer Motion
-
-## Backend / Database
-- Firebase Authentication
-- Firebase Firestore
-
-## API
-- TMDB API
-
----
-
-# 📂 Folder Structure
+Create a `.env` file from `.env.example` and fill in Firebase plus TMDB values.
 
 ```bash
-src/
- ├── components/
- ├── pages/
- ├── firebase/
- ├── context/
- ├── services/
- ├── App.jsx
- ├── main.jsx
- └── index.css
+npm install
+npm run dev
+```
 
-## 🌐 Deployment
+Run checks:
 
-The application is deployed using:
+```bash
+npm run lint
+npm run test:run
+npm run build
+```
 
-GitHub Actions
-Vercel / Netlify
+## Firebase
 
-## 📌 User Stories
-As a user, I should be able to search for movies.
-As a user, I should be able to view movie details.
-As a user, I should be able to create an account and log in.
-As a user, I should be able to save favorite movies.
-As a user, I should be able to access the app on mobile and desktop devices.
+Create a Firebase project named `cineverse`, add a web app, enable Authentication with Email/password and Google providers, and create a Firestore database in test mode for local portfolio development.
 
-##🧭 Application Flow
-User opens application
-Trending movies are displayed
-User searches for a movie
-User clicks movie card
-User views movie details
-User logs in/signs up
-User saves favorites
-Favorites persist in Firestore
+## Version Roadmap
 
-##🧪 Future Improvements
-🎬 Trailer modal
-🌙 Dark/light mode toggle
-🤖 AI movie recommendations
-🔄 Infinite scrolling
-🎭 Genre filtering
-📺 Streaming platform recommendations
-
-##🔖 Semantic Versioning
-v1.0.0 → Initial release
-v1.1.0 → Movie details page
-v1.2.0 → Favorites system
-v2.0.0 → Authentication integration
-v2.1.0 → Testing and CI/CD setup
-
-##👨‍💻 Author
-
-Precious Maina
-
-##📜 License
-MIT License
-This project is licensed for educational purposes.
+- `v1.0.0`: Basic movie app
+- `v1.1.0`: Details page
+- `v1.2.0`: Favorites
+- `v2.0.0`: Authentication
+- `v2.1.0`: Testing and CI/CD
