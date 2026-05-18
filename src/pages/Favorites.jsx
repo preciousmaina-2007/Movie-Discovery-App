@@ -41,8 +41,9 @@ function Favorites() {
   return (
     <main className="page-shell space-y-6 py-10">
       <div>
-        <h1 className="text-3xl font-black sm:text-4xl">Your favorites</h1>
-        <p className="mt-2 text-sm text-slate-300">
+        <p className="section-kicker mb-3">Watchlist</p>
+        <h1 className="text-3xl font-black tracking-tight sm:text-4xl">Your favorites</h1>
+        <p className="mt-2 text-sm text-zinc-300">
           A Firestore-backed watchlist for signed-in users.
         </p>
       </div>

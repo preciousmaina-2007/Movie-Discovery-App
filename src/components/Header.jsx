@@ -11,21 +11,21 @@ function Header() {
   }
 
   const linkClass = ({ isActive }) =>
-    `rounded-md px-3 py-2 text-sm font-medium transition ${
-      isActive ? 'bg-white/10 text-white' : 'text-slate-300 hover:text-white'
+    `rounded-md px-3 py-2 text-sm font-semibold transition ${
+      isActive ? 'bg-red-500/15 text-red-100' : 'text-zinc-300 hover:text-red-50'
     }`
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-slate-950/85 backdrop-blur">
-      <nav className="page-shell flex min-h-16 items-center justify-between gap-4">
-        <Link to="/" className="flex items-center gap-2 text-xl font-black">
-          <span className="grid size-9 place-items-center rounded-md bg-rose-600 text-sm">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
+      <nav className="page-shell flex min-h-16 flex-wrap items-center justify-between gap-3 py-2">
+        <Link to="/" className="flex items-center gap-3 text-xl font-black tracking-tight">
+          <span className="grid size-9 place-items-center rounded-md bg-red-600 text-sm text-white shadow-lg shadow-black/30">
             CV
           </span>
           <span>CineVerse</span>
         </Link>
 
-        <div className="flex items-center gap-1 sm:gap-3">
+        <div className="flex flex-wrap items-center justify-end gap-1 sm:gap-3">
           <NavLink to="/" className={linkClass}>
             Movies
           </NavLink>

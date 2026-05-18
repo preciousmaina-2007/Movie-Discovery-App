@@ -46,8 +46,8 @@ function Login() {
     <main className="page-shell grid min-h-[calc(100vh-4rem)] place-items-center py-10">
       <section className="glass-panel w-full max-w-md rounded-md p-6 shadow-2xl">
         <div className="mb-6 space-y-2">
-          <h1 className="text-3xl font-black">Welcome back</h1>
-          <p className="text-sm text-slate-300">Log in to manage your watchlist.</p>
+          <h1 className="text-3xl font-black tracking-tight">Welcome back</h1>
+          <p className="text-sm text-zinc-300">Log in to manage your watchlist.</p>
         </div>
         {!isFirebaseConfigured && (
           <div className="mb-4">
@@ -90,9 +90,9 @@ function Login() {
         >
           Continue with Google
         </button>
-        <p className="mt-6 text-center text-sm text-slate-300">
+        <p className="mt-6 text-center text-sm text-zinc-300">
           New here?{' '}
-          <Link className="font-semibold text-rose-300 hover:text-rose-200" to="/signup">
+          <Link className="font-semibold text-red-300 hover:text-red-100" to="/signup">
             Create an account
           </Link>
         </p>

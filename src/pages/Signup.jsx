@@ -44,8 +44,8 @@ function Signup() {
     <main className="page-shell grid min-h-[calc(100vh-4rem)] place-items-center py-10">
       <section className="glass-panel w-full max-w-md rounded-md p-6 shadow-2xl">
         <div className="mb-6 space-y-2">
-          <h1 className="text-3xl font-black">Create account</h1>
-          <p className="text-sm text-slate-300">Save favorites across devices.</p>
+          <h1 className="text-3xl font-black tracking-tight">Create account</h1>
+          <p className="text-sm text-zinc-300">Save favorites across devices.</p>
         </div>
         {!isFirebaseConfigured && (
           <div className="mb-4">
@@ -89,9 +89,9 @@ function Signup() {
         >
           Continue with Google
         </button>
-        <p className="mt-6 text-center text-sm text-slate-300">
+        <p className="mt-6 text-center text-sm text-zinc-300">
           Already have an account?{' '}
-          <Link className="font-semibold text-rose-300 hover:text-rose-200" to="/login">
+          <Link className="font-semibold text-red-300 hover:text-red-100" to="/login">
             Log in
           </Link>
         </p>

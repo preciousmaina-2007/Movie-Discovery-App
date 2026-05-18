@@ -12,7 +12,7 @@ function SearchBar({ query, onQueryChange, onSubmit, disabled }) {
         className="form-field"
         aria-label="Search movies"
       />
-      <button type="submit" className="primary-button sm:w-32" disabled={disabled}>
+      <button type="submit" className="primary-button shrink-0 sm:w-32" disabled={disabled}>
         Search
       </button>
     </form>

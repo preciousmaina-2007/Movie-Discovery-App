@@ -9,8 +9,9 @@ import Signup from './pages/Signup.jsx'
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(225,29,72,0.22),transparent_34%),linear-gradient(135deg,#0f172a_0%,#111827_48%,#020617_100%)]" />
+    <div className="min-h-screen overflow-x-hidden bg-[#0b0c12] text-red-50">
+      <div className="fixed inset-0 -z-10 bg-[linear-gradient(145deg,rgba(8,9,14,1)_0%,rgba(23,18,25,1)_42%,rgba(9,21,24,1)_100%)]" />
+      <div className="fixed inset-0 -z-10 bg-[linear-gradient(rgba(255,250,240,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,250,240,0.035)_1px,transparent_1px)] bg-[size:72px_72px]" />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

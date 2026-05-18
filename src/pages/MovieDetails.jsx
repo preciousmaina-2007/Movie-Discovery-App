@@ -101,7 +101,7 @@ function MovieDetails() {
         className="border-b border-white/10 bg-cover bg-center"
         style={{
           backgroundImage: backdrop
-            ? `linear-gradient(90deg, rgba(2,6,23,0.98), rgba(2,6,23,0.74)), url(${backdrop})`
+            ? `linear-gradient(90deg, rgba(11,12,18,0.98), rgba(11,12,18,0.78)), url(${backdrop})`
             : undefined,
         }}
       >
@@ -109,25 +109,25 @@ function MovieDetails() {
           <img
             src={getPosterUrl(movie.poster_path)}
             alt={`${movie.title} poster`}
-            className="w-full max-w-72 rounded-md border border-white/10 object-cover shadow-2xl"
+            className="w-full max-w-72 rounded-md border border-white/10 object-cover shadow-2xl shadow-black/40"
           />
           <div className="max-w-3xl space-y-5 self-center">
-            <Link to="/" className="text-sm font-semibold text-rose-300 hover:text-rose-200">
+            <Link to="/" className="text-sm font-semibold text-red-300 hover:text-red-100">
               Back to movies
             </Link>
             <div className="space-y-3">
-              <h1 className="text-4xl font-black leading-tight sm:text-5xl">
+              <h1 className="text-4xl font-black leading-tight tracking-tight sm:text-5xl">
                 {movie.title}
               </h1>
-              <div className="flex flex-wrap gap-3 text-sm text-slate-300">
+              <div className="flex flex-wrap gap-3 text-sm text-zinc-300">
                 <span>{movie.release_date || 'Release date TBA'}</span>
                 <span>{movie.runtime ? `${movie.runtime} min` : 'Runtime TBA'}</span>
-                <span className="font-bold text-amber-300">
+                <span className="font-bold text-teal-200">
                   {movie.vote_average?.toFixed(1) ?? 'NR'} / 10
                 </span>
               </div>
             </div>
-            <p className="text-base leading-7 text-slate-200">{movie.overview}</p>
+            <p className="text-base leading-7 text-zinc-200">{movie.overview}</p>
             {error && <StatusMessage tone="error">{error}</StatusMessage>}
             <div className="flex flex-wrap gap-3">
               <button
